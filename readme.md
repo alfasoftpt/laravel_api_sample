@@ -67,7 +67,37 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Installation Steps:
 
-- Clone Repository
-- Run migrations: php artisan migrate
-- Run tests: ./vendor/bin/phpunit
-- Test Endpoints: GET /api/students | GET /api/students/{id} | POST /api/students '{"name":"Your Name", "email": "Your email", "phone_number": "Your Phone Number"}'
+### Clone Repository into site root
+```
+git clone https://github.com/alfasoftpt/laravel_api_sample.git .
+```
+
+### Make changes to .htaccess if needed for PHP version requirements
+
+### Install Composer in project and run it:
+```
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+
+php composer-setup.php
+
+php -r "unlink('composer-setup.php');"
+
+php composer.phar update
+```
+
+### Setup .env with correct Database credentials
+
+### Run migrations:
+```
+php artisan migrate
+```
+
+### Run tests:
+```
+./vendor/bin/phpunit
+```
+
+### Test Endpoints:
+- GET /api/students
+- GET /api/students/{id}
+- POST /api/students '{"name":"Your Name", "email": "Your email", "phone_number": "Your Phone Number"}'
