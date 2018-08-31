@@ -1,0 +1,1 @@
+[31-Aug-2018 07:38:56 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 98570240 bytes) in /home/ucan/public_html/app/Exceptions/Handler.php on line 50
